@@ -31,6 +31,11 @@
     <name>JCrop integration examples</name>
     <description></description>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.jcrop</groupId>
@@ -87,8 +92,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>8</source>
+                    <target>8</target>
                     <encoding>UTF-8</encoding>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
@@ -114,6 +119,11 @@
                 <configuration>
                     <downloadSources>true</downloadSources>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
             </plugin>
         </plugins>
     </build>
